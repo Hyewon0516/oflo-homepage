@@ -47,11 +47,13 @@ a { text-decoration: none; color: inherit; }
 }
 
 .logo {
-  font-family: 'Inter', sans-serif;
-  font-size: 1.2rem;
-  font-weight: 900;
-  letter-spacing: 2px;
-  color: var(--dark);
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 28px;
+  width: auto;
 }
 
 .nav { display: flex; gap: 32px; }
