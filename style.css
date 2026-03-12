@@ -512,10 +512,36 @@ h2.light { color: #fff; }
 
   .contact-layout { grid-template-columns: 1fr; gap: 32px; }
 
-  .portfolio-grid { grid-template-columns: 1fr; }
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+    background: none;
+    border: none;
+    gap: 0;
+  }
+
+  .portfolio-item {
+    border-bottom: 1px solid var(--line);
+    padding: 24px 0;
+  }
+
+  .portfolio-item:last-child { border-bottom: none; }
 
   .equip-grid { grid-template-columns: 1fr; }
-  .equip-sub { grid-template-columns: 1fr 1fr; }
+
+  .equip-main { padding: 24px; }
+
+  .spec-list dt {
+    min-width: 90px;
+    font-size: 0.7rem;
+  }
+
+  .spec-list dd { font-size: 0.8rem; }
+
+  .spec-list > div {
+    flex-wrap: wrap;
+  }
+
+  .equip-sub { grid-template-columns: 1fr; }
 
   .footer-inner { flex-direction: column; align-items: flex-start; gap: 16px; }
 }
