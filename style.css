@@ -49,13 +49,11 @@ a { text-decoration: none; color: inherit; }
 }
 
 .logo {
-  display: flex;
-  align-items: center;
-}
-
-.logo-img {
-  height: 28px;
-  width: auto;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: var(--dark);
 }
 
 .nav { display: flex; gap: 32px; }
@@ -456,13 +454,11 @@ h2.light { color: #fff; }
 }
 
 .footer-logo {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: 900;
+  letter-spacing: 2px;
   margin-bottom: 10px;
-}
-
-.footer-logo-img {
-  height: 24px;
-  width: auto;
-  filter: brightness(0) invert(1);
 }
 
 .footer-left p {
