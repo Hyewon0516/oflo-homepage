@@ -275,6 +275,114 @@ h2.light { color: #fff; }
   transform: translateX(4px);
 }
 
+/* ===== Portfolio ===== */
+.portfolio {
+  padding: 100px 0;
+  background: var(--bg);
+  border-top: 1px solid var(--line);
+}
+
+.portfolio h2 { margin-bottom: 48px; }
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+}
+
+.portfolio-item {
+  padding: 32px;
+  background: var(--bg);
+  transition: background 0.2s;
+}
+
+.portfolio-item:hover {
+  background: var(--bg2);
+}
+
+.portfolio-item h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.portfolio-item p {
+  font-size: 0.85rem;
+  color: var(--light);
+  line-height: 1.7;
+}
+
+/* ===== Equipment ===== */
+.equipment {
+  padding: 100px 0;
+  background: var(--dark);
+  color: #fff;
+}
+
+.equipment h2 { margin-bottom: 48px; }
+
+.equip-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.equip-main {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  padding: 32px;
+  border-radius: 4px;
+}
+
+.equip-main h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.spec-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.spec-list > div {
+  display: flex;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.spec-list dt {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.4);
+  min-width: 120px;
+  letter-spacing: 0.5px;
+}
+
+.spec-list dd {
+  font-size: 0.88rem;
+  color: rgba(255,255,255,0.75);
+}
+
+.equip-sub {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  align-content: start;
+}
+
+.equip-item {
+  padding: 16px 20px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 4px;
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.6);
+}
+
 /* ===== Contact ===== */
 .contact {
   padding: 100px 0;
@@ -392,7 +500,7 @@ h2.light { color: #fff; }
   .hero { padding: 140px 0 80px; }
   .hero h1 { font-size: 2rem; }
 
-  .about, .services, .contact { padding: 72px 0; }
+  .about, .services, .contact, .portfolio, .equipment { padding: 72px 0; }
   h2 { font-size: 1.5rem; }
 
   .values { grid-template-columns: 1fr; gap: 0; }
@@ -403,6 +511,11 @@ h2.light { color: #fff; }
   .service-row:hover { padding-left: 0; }
 
   .contact-layout { grid-template-columns: 1fr; gap: 32px; }
+
+  .portfolio-grid { grid-template-columns: 1fr; }
+
+  .equip-grid { grid-template-columns: 1fr; }
+  .equip-sub { grid-template-columns: 1fr 1fr; }
 
   .footer-inner { flex-direction: column; align-items: flex-start; gap: 16px; }
 }
