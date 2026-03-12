@@ -52,8 +52,8 @@ a { text-decoration: none; color: inherit; }
 }
 
 .logo-img {
-  height: 28px;
-  width: auto;
+  height: 35px;
+  width: 120px;
 }
 
 .nav { display: flex; gap: 32px; }
